@@ -1,0 +1,8 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+  <PropertyGroup>
+    <TargetFrameworks>$(PlatformAndPortableFrameworks)</TargetFrameworks>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows.Core\Windows.Core.csproj" />
+  </ItemGroup>
+</Project>

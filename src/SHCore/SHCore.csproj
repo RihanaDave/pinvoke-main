@@ -1,0 +1,11 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+  <PropertyGroup>
+    <TargetFrameworks>$(PlatformAndPortableFrameworks)</TargetFrameworks>
+    <StoreBanned>true</StoreBanned>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\User32\User32.csproj" />
+    <ProjectReference Include="..\Windows.Core\Windows.Core.csproj" />
+    <ProjectReference Include="..\Windows.ShellScalingApi\Windows.ShellScalingApi.csproj" />
+  </ItemGroup>
+</Project>

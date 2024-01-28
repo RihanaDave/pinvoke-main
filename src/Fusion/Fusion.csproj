@@ -1,0 +1,20 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+  <PropertyGroup>
+    <TargetFrameworks>$(PlatformAndPortableFrameworks)</TargetFrameworks>
+    <StoreBanned>true</StoreBanned>
+    <ResolveComReferenceSilent>true</ResolveComReferenceSilent>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows.Core\Windows.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMFileReference Include="$(RepoRootPath)lib\mscoree.tlb">
+      <Visible>false</Visible>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMFileReference>
+    <COMFileReference Include="$(RepoRootPath)lib\cordebug.tlb">
+      <Visible>false</Visible>
+      <EmbedInteropTypes>true</EmbedInteropTypes>
+    </COMFileReference>
+  </ItemGroup>
+</Project>

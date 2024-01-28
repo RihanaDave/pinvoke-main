@@ -1,0 +1,11 @@
+﻿<Project Sdk="MSBuild.Sdk.Extras">
+  <PropertyGroup>
+    <TargetFrameworks>$(PlatformAndPortableFrameworks)</TargetFrameworks>
+    <NoWarn>$(NoWarn);RS0026;RS0027</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Windows.Core\Windows.Core.csproj" />
+    <ProjectReference Include="..\BCrypt\BCrypt.csproj" />
+    <ProjectReference Include="..\Kernel32\Kernel32.csproj" />
+  </ItemGroup>
+</Project>
